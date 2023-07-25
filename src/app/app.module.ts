@@ -20,14 +20,14 @@ import { CustomFieldWrapperComponent } from './customFieldWrapper';
         { 
           name: "myWrapper", 
           component: CustomFieldWrapperComponent, 
-          // types: ["input"]
+          types: ["input"]
         }
       ], 
       types: [
         { 
           name: 'jsonEditorControl', 
           component: CustomFieldComponent,
-          wrappers: ["myWrapper"],
+          // wrappers: ["myWrapper"],
           extends: 'input',
           defaultOptions: {
             templateOptions: {

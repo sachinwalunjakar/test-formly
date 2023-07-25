@@ -19,7 +19,7 @@ export class AppComponent {
       key: 'firstName',
       type: 'jsonEditorControl',
       templateOptions: {
-        label: "input label"
+        label_value: "input label"
       }
     },
     // {

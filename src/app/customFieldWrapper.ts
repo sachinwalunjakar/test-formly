@@ -1,15 +1,19 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 import { FieldWrapper } from '@ngx-formly/core';
+import { CustomFieldComponent } from './custom-field.component';
 
 @Component({
   selector: 'app-custom-field-wrapper',
   template: `
-    <div class="custom-field-wrapper">
-      <label>{{ to.label }}</label> : 
+    <div style="background-color: green;">
+      {{ to['label_value'] }} : 
       <ng-container #fieldComponent></ng-container>
-      <!-- You can add any additional HTML elements or styles here -->
     </div>
   `,
 })
-export class CustomFieldWrapperComponent extends FieldWrapper {
+export class CustomFieldWrapperComponent extends FieldWrapper implements AfterViewInit {
+
+  ngAfterViewInit(): void {
+    let component = (<any> this.fieldComponent) as CustomFieldComponent;
+  }
 }
