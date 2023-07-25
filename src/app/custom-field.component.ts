@@ -3,8 +3,7 @@ import { FieldType } from '@ngx-formly/core';
 
 @Component({
   selector: 'app-custom-field',
-  templateUrl: './custom-field.component.html',
-  styleUrls: ['./custom-field.component.css']
+  template: "input field",
 })
 export class CustomFieldComponent extends FieldType implements AfterViewInit {
 

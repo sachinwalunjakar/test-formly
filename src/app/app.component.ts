@@ -1,10 +1,15 @@
 import { Component } from '@angular/core';
 import { FormGroup } from '@angular/forms';
-import { ConfigOption } from '@ngx-formly/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: "./app.component.html",
+  template: `
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <formly-form [model]="model" [fields]="fields" [form]="form"></formly-form>
+      <button type="submit">Submit</button>
+      hello world
+    </form> 
+  `,
 })
 export class AppComponent {
   form = new FormGroup({});
