@@ -18,6 +18,7 @@ export class AppComponent {
     {
       key: 'firstName',
       type: 'jsonEditorControl',
+      wrappers: ['myWrapper'],
       templateOptions: {
         label_value: "input label"
       }

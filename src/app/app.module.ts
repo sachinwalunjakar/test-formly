@@ -20,7 +20,6 @@ import { CustomFieldWrapperComponent } from './customFieldWrapper';
         { 
           name: "myWrapper", 
           component: CustomFieldWrapperComponent, 
-          types: ["input"]
         }
       ], 
       types: [
